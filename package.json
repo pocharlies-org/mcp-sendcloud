@@ -1,0 +1,28 @@
+{
+  "name": "mcp-sendcloud",
+  "version": "1.0.0",
+  "description": "MCP server for SendCloud shipping API — manage parcels, returns, labels, tracking",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-sendcloud": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js"
+  },
+  "keywords": ["mcp", "sendcloud", "shipping", "claude-code"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.4.0",
+    "typescript": "^5.9.3"
+  }
+}
